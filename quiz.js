@@ -1,12 +1,12 @@
-function checkAnswer(){
+function checkAnswer (){
 
-    const correctAnswer = "4";
+    let correctAnswer = "4";
 
-    const selectedAnswer = document.querySelector('input[name="quiz"]:checked');
+    let selectedAnswer = document.querySelector('input[name="quiz"]:checked');
 
-    const userAnswer = selectedAnswer ? selectedAnswer.value : null;
+    let userAnswer = selectedAnswer ? selectedAnswer.value : null;
 
-    const feedback = document.getElementById('feedback');
+    let feedback = document.getElementById('feedback');
 
     if (userAnswer === null){
         feedback.textContent = "Please select an answer";
