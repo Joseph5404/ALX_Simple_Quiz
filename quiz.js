@@ -8,10 +8,7 @@ function checkAnswer (){
 
     let feedback = document.getElementById('feedback');
 
-    if (userAnswer === null){
-        feedback.textContent = "Please select an answer";
-        
-    }else if(userAnswer === correctAnswer){
+  if(userAnswer === correctAnswer){
             feedback.textContent = "Correct! Well done.";
             feedback.style.color = "green";
         }else{
